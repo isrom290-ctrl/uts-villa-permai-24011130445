@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vila Permai - Puncak Bogor | Fasilitas & Pemesanan Terintegrasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- A. Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Vila <span>Permai</span></div>
+            <ul class="nav-links">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#fasilitas">Fasilitas</a></li> <!-- Link Baru -->
+                <li><a href="#pilihan-vila">Unit Vila</a></li>
+                <li><a href="#pemesanan">Reservasi</a></li>
+            </ul>
+            <div class="nav-action">
+                <a href="#pemesanan" class="btn-reservasi">Pesan Sekarang</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- B. Hero Section -->
+        <section id="beranda" class="hero">
+            <div class="hero-content">
+                <h1>Temukan Kenyamanan Alam Terbuka di Vila Permai</h1>
+                <p>Penginapan asri dengan pemandangan pegunungan Puncak, Bogor yang menenangkan. Destinasi terbaik untuk keluarga.</p>
+                <a href="#pilihan-vila" class="btn-primary">Lihat Unit</a>
+            </div>
+        </section>
+
+        <!-- C. Tentang Vila -->
+        <section id="tentang" class="tentang">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Tentang Vila Permai</h2>
+                    <p>Dedikasi kami untuk memberikan pengalaman menginap tak terlupakan.</p>
+                </div>
+                <div class="tentang-grid">
+                    <div class="tentang-text">
+                        <h3>Ketenangan Di Tengah Kebun Teh</h3>
+                        <p>Vila Permai adalah hunian keluarga profesional yang terletak di kawasan Cisarua, Puncak, Bogor[cite: 1]. Kami menawarkan privasi total dengan udara sejuk pegunungan, dikelilingi oleh hamparan kebun teh yang asri.</p>
+                        <ul class="fitur-unggulan">
+                            <li>🌿 Pemandangan Pegunungan Langsung</li>
+                            <li>🏊 Fasilitas Rekreasi Lengkap</li>
+                            <li>📶 Layanan Terintegrasi (Spa, Resto, Tour)</li>
+                        </ul>
+                    </div>
+                    <div class="tentang-image">
+                        <!-- Menghubungkan ke about-villa.jpg di folder assets/images/ -->
+                        <img src="assets/images/about-villa.jpg" alt="Lobi dan Suasana Vila Permai Puncak">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- C.2 Section FASILITAS RESORT (Gaya Image Overlay - BARU) -->
+        <section id="fasilitas" class="fasilitas-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Fasilitas & Layanan Eksklusif</h2>
+                    <div class="title-underline"></div>
+                    <p>Kami menyediakan berbagai fasilitas pendukung kelas atas untuk menyempurnakan liburan Anda.</p>
+                </div>
+                
+                <div class="facilities-grid">
+                    <!-- Fasilitas 1: Kolam Renang (pool.jpg) -->
+                    <div class="facility-card">
+                        <img src="assets/images/pool.jpg" alt="Kolam Renang Infinity Pool Vila Permai">
+                        <div class="facility-overlay">
+                            <h3>Vila Permai Infinity Pool</h3>
+                            <p>Kolam renang air hangat dengan panorama lembah.</p>
+                        </div>
+                    </div>
+
+                    <!-- Fasilitas 2: Private Dining (private-dining.jpg) -->
+                    <div class="facility-card">
+                        <img src="assets/images/private-dining.jpg" alt="Layanan Makan Privat Vila Permai">
+                        <div class="facility-overlay">
+                            <h3>Vila Permai Romantic & Private Dining</h3>
+                            <p>Makan malam romantis dengan suasana privat.</p>
+                        </div>
+                    </div>
+
+                    <!-- Fasilitas 3: Tour Services (tour-services.jpg) -->
+                    <div class="facility-card">
+                        <img src="assets/images/tour-services.jpg" alt="Layanan Tur & Jasa Vila Permai">
+                        <div class="facility-overlay">
+                            <h3>Vila Permai Tour & Services</h3>
+                            <p>Tur gunung dan jasa antar-jemput bandara.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- D. Daftar Pilihan Vila -->
+        <section id="pilihan-vila" class="pilihan-vila">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Pilihan Unit Vila</h2>
+                    <p>Pilih unit penginapan yang sesuai dengan kebutuhan liburan Anda.</p>
+                </div>
+                
+                <!-- Container dinamis untuk kartu vila dari JavaScript -->
+                <div id="villaListContainer" class="villa-grid">
+                    <!-- Kartu vila akan dirender otomatis melalui JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- E & F. Form Pemesanan & Ringkasan Biaya -->
+        <section id="pemesanan" class="pemesanan-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Reservasi Online & Ringkasan</h2>
+                    <p>Lakukan pengecekan ketersediaan dan hitung estimasi biaya secara otomatis.</p>
+                </div>
+
+                <div class="pemesanan-wrapper">
+                    <!-- Formulir Pemesanan -->
+                    <form id="bookingForm" class="booking-form">
+                        <h3>Formulir Pemesanan</h3>
+                        
+                        <div class="form-group">
+                            <label for="namaTamu">Nama Lengkap Tamu</label>
+                            <input type="text" id="namaTamu" placeholder="Masukkan nama lengkap Anda" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkIn">Tanggal Check-in</label>
+                                <input type="date" id="checkIn" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkOut">Tanggal Check-out</label>
+                                <input type="date" id="checkOut" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="jumlahTamu">Jumlah Tamu</label>
+                                <input type="number" id="jumlahTamu" min="1" max="10" value="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pilihanVilaSelect">Pilih Unit Vila</label>
+                                <select id="pilihanVilaSelect" required>
+                                    <option value="">-- Pilih Vila --</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" id="btnCekKetersediaan" class="btn-secondary">Cek Ketersediaan</button>
+                            <button type="submit" id="btnPesan" class="btn-primary">Pesan Sekarang</button>
+                        </div>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+
+                    <!-- Ringkasan Biaya -->
+                    <div class="summary-card">
+                        <h3>Ringkasan Biaya</h3>
+                        <div class="summary-item">
+                            <span>Vila Dipilih:</span>
+                            <span id="sumVilaName">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Harga/Malam:</span>
+                            <span id="sumHargaMalam">Rp 0</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Malam:</span>
+                            <span id="sumJumlahMalam">0 Malam</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Tamu:</span>
+                            <span id="sumJumlahTamu">0 Orang</span>
+                        </div>
+                        <hr>
+                        <div class="summary-total">
+                            <span>Total Pembayaran:</span>
+                            <span id="sumTotalHarga">Rp 0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- G. Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="logo">Vila <span>Permai</span></div>
+                <p>Penginapan asri dan nyaman di kawasan Puncak, Bogor[cite: 1]. Solusi liburan terbaik Anda.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Informasi Kontak</h4>
+                <p>📍 Jl. Raya Puncak No. 88, Cisarua, Bogor, Jawa Barat</p>
+                <p>📞 WhatsApp: +62 812-3456-7890</p>
+                <p>📧 Email: info@vilapermai.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hak Cipta</h4>
+                <p>&copy; 2026 Vila Permai. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Berkas Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

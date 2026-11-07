@@ -1,0 +1,19 @@
+# Konfigurasi / Pengaturan Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# File Sistem Operasi
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Log atau File Temporary
+*.log
+npm-debug.log*
