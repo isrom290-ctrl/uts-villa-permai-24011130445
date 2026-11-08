@@ -33,7 +33,7 @@ Website ini dirancang untuk memudahkan calon pengunjung dalam melihat fasilitas 
 
 ## Tangkapan Layar (Screenshot Halaman Web)
 
-![Tampilan Utama Website Vila Permai](assets/images/about-villa.jpg)
+![Tampilan Utama Website Vila Permai](assets/images/screenshot-web.png)
 
 *(Catatan: Anda juga dapat mengganti tautan gambar di atas dengan file screenshot hasil tampilan browser Anda yang disimpan di folder `assets/images/screenshot.png`).*
 
